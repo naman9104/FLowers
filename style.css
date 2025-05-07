@@ -1321,19 +1321,25 @@ body {
     }
   }
     .arrow-message {
-  text-align: center;
-  margin-top: 20px;
-  animation: fadeIn 2s ease 1.2s forwards;
-  opacity: 0;
-}
+    position: absolute;
+    top: -800px;
+    right: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 2s ease 1.2s forwards;
+    opacity: 0;
+    z-index: 10;
+  }
+  
 
 .arrow {
-  font-size: 2em;
+  font-size: 5em;
   animation: bounce 1s infinite;
 }
 
 .message {
-  font-size: 1.5em;
+  font-size: 4.5em;
   color: #ff69b4;
   margin-top: 10px;
   font-weight: bold;
@@ -1352,7 +1358,7 @@ body {
 /* Fade in effect */
 @keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 4;
   }
 }
 
