@@ -1334,12 +1334,12 @@ body {
   
 
 .arrow {
-  font-size: 5em;
+  font-size: 50px;
   animation: bounce 1s infinite;
 }
 
 .message {
-  font-size: 4.5em;
+  font-size: 9.5em;
   color: #ff69b4;
   margin-top: 10px;
   font-weight: bold;
