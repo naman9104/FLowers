@@ -1287,11 +1287,13 @@ body {
   }
   
   .intro-text {
-    font-size: 3em;
-    font-family: 'Courier New', Courier, monospace;
+    display: block; /* or just remove 'display' if it's not needed */
     text-align: center;
-    animation: glowPulse 2s infinite alternate;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
   }
+  
   
   .open-btn {
     margin-top: 30px;
@@ -1320,46 +1322,5 @@ body {
       text-shadow: 0 0 20px #00ffe1, 0 0 40px #00ffe1;
     }
   }
-  .arrow-message {
-    position: absolute;
-    top: -800px;
-    right: -100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    animation: fadeIn 2s ease 1.2s forwards;
-    opacity: 0;
-    z-index: 10;
-  }
-  
-
-.arrow {
-  font-size: 50px;
-  animation: bounce 1s infinite;
-}
-
-.message {
-  font-size: 9.5em;
-  color: #ff69b4;
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-/* Bouncing arrow animation */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Fade in effect */
-@keyframes fadeIn {
-  to {
-    opacity: 4;
-  }
-}
-
+    
   
