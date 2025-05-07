@@ -1320,5 +1320,40 @@ body {
       text-shadow: 0 0 20px #00ffe1, 0 0 40px #00ffe1;
     }
   }
-    
+    .arrow-message {
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease 1.2s forwards;
+  opacity: 0;
+}
+
+.arrow {
+  font-size: 2em;
+  animation: bounce 1s infinite;
+}
+
+.message {
+  font-size: 1.5em;
+  color: #ff69b4;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Bouncing arrow animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade in effect */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
   
